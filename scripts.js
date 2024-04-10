@@ -165,6 +165,7 @@ function removeItem(button) {
     const card = button.closest('.card');
     const index = Array.from(card.parentNode.children).indexOf(card);
     catalog.splice(index, 1);
-    showCatalog();
+    catalog.pop();
+    catalog.showCatalog();
 }
 
